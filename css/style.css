@@ -1,7 +1,33 @@
-body {
-    background-color: #222;
+html {
+    box-sizing: border-box;
 }
 
-h1 {
-    color: white;
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.container-cuadricula {
+    width: 300px;
+    display: grid;
+    grid-template-columns: repeat(16, 20px);
+    grid-template-rows: repeat(16, 20px);
+}
+
+.item-cuadricula {
+    border: thin solid #222;
+}
+
+.color-black{
+    background-color: black;
 }
