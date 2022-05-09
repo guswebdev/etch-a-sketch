@@ -3,7 +3,8 @@ import { pintarCuadricula } from "./pintar-cuadricula.js";
 const d = document;
 
 d.addEventListener('DOMContentLoaded', e => {
-    pintarCuadricula(16)
+    const limite = parseInt(prompt('Ingrese el tamaño de la grilla'))
+    pintarCuadricula(limite)
 })
 
 d.addEventListener('mouseover', e => {
